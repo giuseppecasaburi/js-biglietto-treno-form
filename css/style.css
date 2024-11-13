@@ -1,0 +1,47 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    background-color: #ad1f1f;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* LAYOUT */
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.user-bar {
+    background-color: white;
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#form {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    margin: 35px 25px 0px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+}
