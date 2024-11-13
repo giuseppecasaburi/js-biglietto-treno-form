@@ -26,4 +26,3 @@ Se non vi sentite particolarmente creativi, questa potrebbe essere un’implemen
 2. Sviluppare un algoritmo che calcoli il prezzo tenendo presente che il biglietto costa 0.21€ al km e che ci sono due tipi di sconto:
     -20% per minorenni;
     -40% per over 65.
-3. 
