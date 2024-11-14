@@ -4,10 +4,12 @@ const kmElm = document.getElementById("km");
 const ageElm = document.getElementById("age");
 const prezzoAlKm = 0.21;
 const textElm = document.querySelector(".text")
+const ticketElm = document.getElementById("ticket");
+const resetBtnElm = document.getElementById("reset-btn");
 
 
 const randomNum = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) - 1 );
+    return Math.floor(Math.random() * (max - min + 1) + min );
 } 
 
 
@@ -29,7 +31,7 @@ formElm.addEventListener("submit", (event) => {
     
     prezzoUser.toFixed(2);
 
-    
+    ticketElm.classList.remove("hidden");
     textElm.innerHTML = `
         <table class="">
             <thead>
@@ -45,14 +47,22 @@ formElm.addEventListener("submit", (event) => {
                 <tr>
                     <td>${nameElm.value}</td>
                     <td>${typeOfTickets}</td>
-                    <td>${randomNum(2, 14)}</td>
+                    <td>${randomNum(1, 14)}</td>
                     <td>${randomNum(1000, 9000)}</td>
                     <td>${prezzoUser.toFixed(2)}€</td>
                 </tr>
             </tbody>
         </table>
     `
+
+
 })
+
+resetBtnElm.addEventListener("click", function() {
+    formElm.reset();
+    ticketElm.classList.add("hidden");
+})
+
 
 
 
