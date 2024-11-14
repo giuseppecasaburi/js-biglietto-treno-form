@@ -20,6 +20,10 @@ body {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 /* LAYOUT */
 .title {
     text-align: center;
